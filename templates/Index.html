@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Dashing!</title>
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static', filename='css/style.css') }}">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="/">Dashing!</a>
+            <!-- Links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                <a class="nav-link" href="/child">Child Page</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Update Information</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Report</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Settings</a>
+                </li>
+            </ul>
+        </nav>
+
+        <br>
+
+        {% block content %}
+
+        {% endblock %}
+
+        <hr>
+        <footer> Dashing 2019™ </footer>
+        <hr>
+
+    </body>
+</html>

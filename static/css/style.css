@@ -1,0 +1,10 @@
+
+input {
+    max-width: 200px;
+}
+
+.btnchild {
+    color: black;
+    width: 200px;
+    height: 200px;
+}
